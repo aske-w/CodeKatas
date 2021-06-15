@@ -25,42 +25,42 @@ namespace BinaryNumbers.Tests
         public void BinaryNumbers_returns_00000000000000000000000000000000_for_input_0()
         {
             var result = binaryNumbers.IntegerToBinary(0);
-            Assert.AreEqual("0000000000000000000000000000000", result);
+            Assert.AreEqual("00000000000000000000000000000000", result);
         }
 
         [Test]
         public void BinaryNumbers_returns_00000000000000000000000000000001_for_input_1()
         {
-            var result = binaryNumbers.IntegerToBinary(0);
-            Assert.AreEqual("0000000000000000000000000000001", result);
+            var result = binaryNumbers.IntegerToBinary(1);
+            Assert.AreEqual("00000000000000000000000000000001", result);
         }
 
         [Test]
-        public void BinaryNumbers_returns_0000000000000000000010000000000_for_input_1024()
+        public void BinaryNumbers_returns_00000000000000000000010000000000_for_input_1024()
         {
-            var result = binaryNumbers.IntegerToBinary(0);
-            Assert.AreEqual("0000000000000000000010000000000", result);
+            var result = binaryNumbers.IntegerToBinary(1024);
+            Assert.AreEqual("00000000000000000000010000000000", result);
         }
 
         [Test]
         public void BinaryNumbers_returns_00000000000000001111111111111111_for_input_65535()
         {
             var result = binaryNumbers.IntegerToBinary(65535);
-            Assert.AreEqual("0000000000000001111111111111111", result);
+            Assert.AreEqual("00000000000000001111111111111111", result);
         }
 
         [Test]
-        public void BinaryNumbers_returns_0000000000100000000000000000000_for_input_1048576()
+        public void BinaryNumbers_returns_00000000000100000000000000000000_for_input_1048576()
         {
             var result = binaryNumbers.IntegerToBinary(1048576);
-            Assert.AreEqual("0000000000100000000000000000000", result);
+            Assert.AreEqual("00000000000100000000000000000000", result);
         }
 
         [Test]
         public void BinaryNumbers_returns_01010101010101010101010101010101_for_input_1431655765()
         {
             var result = binaryNumbers.IntegerToBinary(1431655765);
-            Assert.AreEqual("10101010101010101010101010101010", result);
+            Assert.AreEqual("01010101010101010101010101010101", result);
         }
 
         [Test]
