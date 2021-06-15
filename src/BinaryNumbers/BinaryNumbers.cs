@@ -29,7 +29,17 @@ namespace BinaryNumbers
 
         public int BinaryToInteger(string s)
         {
-            throw new NotImplementedException();
+            var index = 0;
+
+            var total = 0;
+
+            while (index < s.Length)
+            {
+                total = 2 * total + (int.Parse(s[index].ToString()));
+                index++;
+            }
+
+            return total;
         }
     }
 }
