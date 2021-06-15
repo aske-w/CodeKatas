@@ -58,7 +58,7 @@ namespace BinaryNumbers.Tests
         [Test]
         public void BinaryNumbers_returns_1431655765_for_input_01010101010101010101010101010101()
         {
-            var result = binaryNumbers.BinaryToInteger("10101010101010101010101010101010");
+            var result = binaryNumbers.BinaryToInteger("01010101010101010101010101010101");
             Assert.AreEqual(1431655765, result);
         }
 
