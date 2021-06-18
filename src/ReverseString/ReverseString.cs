@@ -10,7 +10,14 @@ namespace ReverseString
     {
         public string Reverse(string s)
         {
-            throw new NotImplementedException();
+            //Stringbuilder is slightly faster than using the Linq statement at the bottom
+            var sb = new StringBuilder(s.Length);
+            for (int i = s.Length - 1; i >= 0; i--)
+            {
+                sb.Append(s[i]);
+            }
+            return sb.ToString();
+            // return new string(s.Reverse().ToArray());
         }
     }
 }
