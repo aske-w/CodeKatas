@@ -6,12 +6,13 @@ namespace PiCalculator
     {
         public string GetPi(int i)
         {
-            throw new NotImplementedException();
+            var pi = Math.PI;
+            return Math.Round(pi, i).ToString().Replace(',','.');
         }
 
         public int GetPiDigit(int i)
         {
-            throw new NotImplementedException();
+            return int.Parse(GetPi(i)[i + 1] + "");
         }
     }
 }
